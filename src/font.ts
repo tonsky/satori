@@ -323,7 +323,7 @@ export default class FontLoader {
     }
 
     const height = (resolvedFont: opentype.Font, useOS2Table = false) => {
-      if ('normal' === lineHeight) {
+      if (typeof lineHeight === 'string' && lineHeight === 'normal') {
         const _lineGap =
           (useOS2Table ? resolvedFont.tables?.os2?.sTypoLineGap : 0) || 0
         return (

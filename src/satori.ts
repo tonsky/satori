@@ -100,7 +100,7 @@ export default async function satori(
       fontWeight: 'normal',
       fontFamily: 'serif',
       fontStyle: 'normal',
-      lineHeight: 'normal',
+      lineHeight: 1.2,
       color: 'black',
       opacity: 1,
       whiteSpace: 'normal',
